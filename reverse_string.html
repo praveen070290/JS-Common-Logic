@@ -1,0 +1,20 @@
+<head>
+<title>Your Page Title</title>
+<script type="text/javascript" >
+function reverse (str) {
+  var newstr = '';
+  for(var i = 0; i<=str.length-1; i++) {
+      newstr += (str.charAt(str.length-i-1));
+  }
+  return newstr;
+}
+console.log(reverse('This is a silly world'))
+</script>
+</head>
+
+<!-- String.prototype.reverse = function (){
+  if(!this || this.length <2) return this;
+  return this.split('').reverse().join('');
+}
+> 'abc'.reverse();
+  = 'cba' -->
